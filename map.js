@@ -9,8 +9,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmtsZXBwZXIiLCJhIjoiY2s3Z2ZsYmdhMGQ2ZTNmb2Rjb
 let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v10',
-    center: [-73.96024, 40.80877],
-    zoom: 15
+    center: [-75.16370205770407, 39.95336946383193],
+    zoom: 13
 })
 
 // create an instance of NavigationControl
@@ -68,26 +68,26 @@ map.on('click', function(event) {
 
 })
 
-let marker = new mapboxgl.Marker()
-marker.setLngLat([-73.96007,40.80871])
-marker.addTo(map)
-
-let popup = new mapboxgl.Popup()
-popup.setHTML('This is the Center for Spatial Research<br /><img src="https://currystonefoundation.org/wp-content/uploads/2018/05/csf_pr_csr_image5.jpg" />')
-marker.setPopup(popup)
-
 let data = [
     {
-        location: [-73.96191,40.80762],
-        content: 'I like to eat my lunch here'
+        location: [-75.18203791905461,39.9559240414018],
+        content: 'Stop 1: Meet at station at 10:30am'
     },
     {
-        location: [-73.95936,40.80610],
-        content: '15 years ago, you could see over the trees'
+        location: [-75.1590135561212,39.95329882536828],
+        content: 'Stop 2: Buy snacks at Reading Terminal Market'
     },
     {
-        location: [-73.96204,40.80994],
-        content: 'This was once tennis courts'
+        location: [-75.17284302607497,39.960659252852025],
+        content: 'Stop 3: Art at the Barnes Foundation'
+    },
+    {
+        location: [-75.14518336302324,39.946303074798635],
+        content: 'Stop 4: Wait in line for dinner at Zahav'
+    },
+    {
+        location: [-75.18494700612314,39.95614582349273],
+        content: 'Stop 5: Get bus back to New York'
     },
     ]
 
