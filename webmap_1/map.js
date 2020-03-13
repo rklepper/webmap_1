@@ -87,7 +87,7 @@ let data = [
     },
     {
         location: [-75.18494700612314,39.95614582349273],
-        content: 'Stop 5: Get bus back to New York d'
+        content: 'Stop 5: Get bus back to New York'
     },
     ]
 
